@@ -26,6 +26,9 @@ export default function Navbar() {
     function eight(e) {
         window.location.href = 'https://www.coursera.org/degrees/imba';
     }
+    function degress() {
+        window.location.href = "https://www.coursera.org/degrees"
+    }
     return (
         <>
             <li className="flex flex-row  justify-center space-x-5 py-3 font-semibold text-white bg-black ">
@@ -33,7 +36,7 @@ export default function Navbar() {
                 <ul>For Businesses</ul>
                 <ul>Home</ul>
                 <ul>FAQ</ul>
-                <Link to={AboutUs} ><ul >About Us</ul></Link>
+                <Link to={'/aboutus'} ><ul >About Us</ul></Link>
             </li>
             <div className="box bg-white flex flex-row justify-between px-8">
                 <li className="flex items-center space-x-7 py-2  text-blue-800 flex-row text-2xl font-semibold ">
@@ -42,7 +45,7 @@ export default function Navbar() {
                     <ul><input className="rounded-3xl border-black border-[2px] py-2 placeholder:text-[15px] px-3 font-light h-10 placeholder:font-extralight text-black placeholder:px-2" placeholder="What do you want to learn?" type="text" /></ul>
                 </li>
                 <li className="space-x-3 flex flex-row items-center">
-                    <ul>Online Degrees</ul>
+                    <ul onClick={degress}>Online Degrees</ul>
                     <ul>Find your New Career</ul>
                     <Link to={'/login'}>  <ul className="text-blue-600"><button className="bg-blue-50 px-3 py-2 rounded-md border border-blue-600">Log In</button></ul></Link>
                 </li>
@@ -138,6 +141,30 @@ export default function Navbar() {
                     </a>
                     </li>
 
+                </ul>
+            </div>
+            <div className="py-6">
+                <ul className="flex flex-row justify-center space-x-5">
+                    <li className="w-64 "><h1 className="text-2xl">Affordable tuition with flexible payment options</h1>
+                        <p className="text-blue-600">Pursue your degree with affordable tuition, flexible payment options that let you pay as you go, and financial aid opportunities, including scholarships.</p></li>
+                    <li><div onClick={seven} className="hover:shadow-xl h-[350px] border border-gray-300 w-80 rounded-md p-4">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4r5JpFHQvXgmWvMtRMXbeb/8179cc039f4c5a1e2bfda3007d34de0d/UMGC-Logo.png?auto=format%2Ccompress&dpr=1" alt="" />
+                        <p className="text-gray-500 text-[16px]">University of Maryland Global Campus</p>
+                        <p>Bachelor of Science in Cybersecurity Technology</p>
+                        <p className="text-[13px]">Prepare for in-demand cybersecurity certifications as you take coursework that can help prepare you for industry-specific</p>
+
+                    </div></li>
+                    <li> <div onClick={five} className=" border hover:shadow-xl h-[350px] border-gray-300 w-80 rounded-md p-4 ">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3n5rkjzizbvwLbLBGcU6fQ/4082dbaab1e8b79b514e4badfd294303/LSU_Online_Continuing_Ed_Logo.jpg?auto=format%2Ccompress&dpr=1" alt="" />
+                        <p className="text-gray-500 text-[16px]">Louisiana State University
+                        </p>
+                        <p>Flores Master of Business Administration</p>
+                        <p className="text-[13px]">Application due October 7, 2024</p>
+                    </div></li>
+                    <Link className="text-2xl w-96 text-gray-600 border border-green-400 rounded-lg p-5" to={'/students'}>
+
+                        Your feedback is essential in ensuring that future students have an even better experience. Thank you for helping us grow!
+                        <img src="https://static.vecteezy.com/system/resources/previews/014/433/279/original/rate-your-experience-emoji-faces-feedback-concept-isolated-on-white-background-vector.jpg" alt="" /></Link>
                 </ul>
             </div>
         </>
