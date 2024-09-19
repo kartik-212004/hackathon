@@ -19,4 +19,4 @@ Make sure you have **Node.js** and **npm** installed on your machine.
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:kartik-212004/hackathon.git
